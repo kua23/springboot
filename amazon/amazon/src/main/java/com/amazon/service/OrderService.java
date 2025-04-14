@@ -1,0 +1,23 @@
+package com.amazon.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.amazon.entity.Order;
+import com.amazon.repository.OrderRepository;
+
+@Service
+public class OrderService {
+	@Autowired
+	OrderRepository orderRepository;
+	
+	public List<Order> findAllOrder(){
+		return orderRepository.findAll();
+	}
+	
+	public Order addOrder(Order order) {
+		return orderRepository.save(order);
+	}
+}

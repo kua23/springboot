@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Amazon.com</title>
+</head>
+<body>
+<form action="/customers" method = "POST">
+	<label>for="message""Woah"</label><br>
+	<input type="text" id="" name=""><br>
+	<button type="Submit">Submit</button>
+</form>
+</body>
+</html>
